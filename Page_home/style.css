@@ -1,0 +1,11 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.bg-url {
+    height: 80vh;
+    background: url("../Source/Overlay+Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
