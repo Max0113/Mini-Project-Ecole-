@@ -9,7 +9,7 @@ body {
 }
 .fath {
     width: 480px;
-    height: 585px;
+    height: auto;
     border: 1px solid;
     background-color: rgb(255, 255, 255, 1);
     border-color: rgb(236, 232, 240, 1) ;
@@ -35,4 +35,47 @@ footer {
 
 .button{
     width: 85%;
+    padding: 8px;
+    font-weight: bolder;
+    background-color: rgb(56, 56, 210);
+    border-radius: 7px;
+    margin: 10px;
+}
+.button:hover {
+    background-color: rgb(122, 122, 254);
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+}
+.labe {
+    display: block;
+}
+.inp {
+    width: 80%;
+    margin-bottom: 7px;
+    padding: 5px;
+}
+.head {
+    display: flex grid;
+    justify-content: center;
+    justify-items: stretch;
+    align-items: start;
+}
+.con {
+    border: 0.01px solid lightgray;
+    padding: 5px;
+    width: 25%;
+    justify-items: center;
+    align-items: first baseline;
+    display:flow-root;
+}
+.cons {
+    color: rgba(0, 0, 0, 0.674);
+}
+icon {
+    margin: 8px;
+    justify-items: stretch;
+}
+.hed {
+    margin: 3px;
+    text-align: center;
 }
