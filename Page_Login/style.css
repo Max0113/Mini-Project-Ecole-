@@ -23,17 +23,21 @@ a{
 }
 .sing{
     border: 0px solid;
-    width: 480px; 
+    width: 500px; 
     height: auto;
     display: flex;
     flex-direction: column;
     padding: 30px;
+    justify-self: center;
+    align-items: center;
 }
 
 footer {
     justify-self: center;
 }
-
+.kaka {
+    justify-self: center;
+}
 .button{
     width: 85%;
     padding: 8px;
@@ -45,10 +49,12 @@ footer {
 .button:hover {
     background-color: rgb(122, 122, 254);
     transform: scale(1.1);
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
 }
 .labe {
     display: block;
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
 .inp {
     width: 80%;
@@ -56,13 +62,17 @@ footer {
     padding: 5px;
 }
 .head {
-    display: flex grid;
-    justify-content: center;
-    justify-items: stretch;
-    align-items: start;
+    align-self: center;
 }
-.cons {
-    color: rgba(0, 0, 0, 0.674);
+button {
+    color:  rgba(51, 65, 85, 1);
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 12px ;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 52.52px;
+    margin-right: 52.53px;
 }
 icon {
     margin: 8px;
@@ -71,4 +81,7 @@ icon {
 .hed {
     margin: 3px;
     text-align: center;
+}
+a {
+    color:rgba(17, 82, 212, 1);
 }
