@@ -1,0 +1,74 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Porsche_911_Carrera_%287266826444%29.jpg",
+    "label": "Luxury",
+    "labelClass": "bg-[#1152d4]",
+    "name": "Porsche 911 Carrera",
+    "price": "250",
+    "transmission": "Auto",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Petrol",
+    "fuelIcon": "fa-solid fa-gas-pump",
+    "seats": "2"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/2023_Tesla_Model_S_Plaid.jpg",
+    "label": "Electric",
+    "labelClass": "bg-[#10b981]",
+    "name": "Tesla Model S Plaid",
+    "price": "180",
+    "transmission": "Auto",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Electric",
+    "fuelIcon": "fa-solid fa-bolt",
+    "seats": "5"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Land_Rover_Defender_110.jpg",
+    "label": "SUV",
+    "labelClass": "bg-[#f97316]",
+    "name": "Land Rover Defender",
+    "price": "145",
+    "transmission": "Auto",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Diesel",
+    "fuelIcon": "fa-solid fa-gas-pump",
+    "seats": "7"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/BMW_5_Series.jpg",
+    "label": "Premium",
+    "labelClass": "bg-[#2563eb]",
+    "name": "BMW 5 Series",
+    "price": "110",
+    "transmission": "Auto",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Hybrid",
+    "fuelIcon": "fa-solid fa-leaf",
+    "seats": "5"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ford_Mustang_GT_%2837372750026%29.jpg",
+    "label": "Sport",
+    "labelClass": "bg-[#ef4444]",
+    "name": "Ford Mustang GT",
+    "price": "160",
+    "transmission": "Manual",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Petrol",
+    "fuelIcon": "fa-solid fa-gas-pump",
+    "seats": "4"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Audi_Q7_%284M%29_IMG_2692.jpg",
+    "label": "SUV",
+    "labelClass": "bg-[#f97316]",
+    "name": "Audi Q7 Quattro",
+    "price": "130",
+    "transmission": "Auto",
+    "transmissionIcon": "fa-solid fa-gear",
+    "fuel": "Diesel",
+    "fuelIcon": "fa-solid fa-gas-pump",
+    "seats": "7"
+  }
+]
