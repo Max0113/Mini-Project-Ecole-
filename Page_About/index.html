@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,104 +11,105 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="m-0 bg-[#f6f6f8] text-[#0f172a] ">
+<body class="page">
     <div id="smooth-wrapper">
-        <div id="smooth-content" class="w-full">
-        <header class="flex bg-white justify-between px-15 py-3 items-center">
-                <div class="flex items-center gap-2">
-                    <img src="../Source/Background.png" />
-                    <h1 class="font-extrabold"> Atlas Drive</h1>
+        <div id="smooth-content" class="page-shell">
+        <header class="site-header">
+            <div class="site-header-inner">
+                <div class="logo">
+                    <img src="../Source/Logo.png" alt="Atlas Drive" />
+                    <h1 class="logo-title">Atlas Drive</h1>
                 </div>
                 <nav>
-                    <ul class="flex *:text-[0.85rem] gap-10 *:hover:text-blue-500 border-blue-500 *:hover:border-b-1 transition-all duration-300 *:cursor-pointer">
+                    <ul class="nav-list">
                         <li><a href="../Page_home/index.html">Home</a></li>
-                        <li><a>Cars</a></li>
+                        <li><a href="../Page_Cars/ViewCars/index.html">Cars</a></li>
                         <li><a>Rentals</a></li>
-                        <li><a href="/" class="text-blue-500">About</a></li>
+                        <li><a href="/" class="is-active">About</a></li>
                     </ul>
                 </nav>
-                <div class="flex gap-4">
-                    <button class="text-[0.8rem] bg-[#E2E8F0] font-extrabold py-2 px-4 rounded-md cursor-pointer hover:scale-102 hover:bg-[#e1e6ea] transition-all duration-150">Login</button>
-                    <button class="text-[0.8rem] bg-[#1152D4] font-extrabold py-2 px-4 rounded-md text-white cursor-pointer hover:bg-[#205dd6] hover:scale-102 transition-all duration-150">Sgin up</button>
+                <div class="header-actions">
+                    <button class="btn btn-secondary">Login</button>
+                    <button class="btn btn-primary">Sgin up</button>
                 </div>
+            </div>
         </header>
 
-        <main class="mx-auto w-full pt-8">
+        <main class="page-content">
 
-            <div class="px-15">
-            <section class="relative flex min-h-[500px]  w-full justify-self-center items-end overflow-hidden rounded-xl">
-                <img id="heroImage" alt="Luxury car on scenic road" class="absolute inset-0 h-full w-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/75"></div>
-                <div class="relative z-10 max-w-[768px] px-8 pb-12 md:px-16 md:pb-16">
-                    <h2 class="m-0 text-[42px] leading-tight font-extrabold text-white md:text-[60px] md:leading-[69px]">Driving Excellence<br>Since 2010</h2>
-                    <p class="mt-3 max-w-[640px] text-[20px] leading-7 text-[#e2e8f0]">We don't just move people; we elevate the standard of travel through precision, luxury, and unwavering reliability.</p>
+            <div class="hero-wrapper">
+            <section class="page-hero">
+                <img id="heroImage" alt="Luxury car on scenic road" class="page-hero-image">
+                <div class="page-hero-overlay"></div>
+                <div class="page-hero-content">
+                    <h2 class="page-hero-title">Driving Excellence<br>Since 2010</h2>
+                    <p class="page-hero-text">We don't just move people; we elevate the standard of travel through precision, luxury, and unwavering reliability.</p>
                 </div>
             </section>
             </div>
 
-            <section class="grid gap-12 px-0 py-12 md:grid-cols-2 md:gap-16 md:px-14">
+            <section class="mission-section">
                 <div>
-                    <span class="inline-flex rounded-full bg-[#1152d41a] px-3 py-1 text-[12px] font-bold tracking-[0.6px] text-[#1152d4]">OUR MISSION</span>
-                    <h3 class="mt-4 mb-4 text-[36px] leading-[45px] font-extrabold">Redefining the Journey</h3>
-                    <p class="mb-6 text-[18px] leading-[29px] text-[#475569]">At Atlas Drive, we believe that every journey should be as remarkable as the destination. Founded on the principles of integrity and excellence, we have grown from a local boutique service to a premier name in high-end transportation.</p>
-                    <p class="m-0 text-[18px] leading-[29px] text-[#475569]">Our commitment is to provide seamless, luxury transportation experiences that redefine the standards of reliability and comfort. Whether it's a corporate transfer or a private tour, we bring a level of care that is unmatched in the industry.</p>
+                    <span class="mission-tag">OUR MISSION</span>
+                    <h3 class="mission-title">Redefining the Journey</h3>
+                    <p class="mission-text">At Atlas Drive, we believe that every journey should be as remarkable as the destination. Founded on the principles of integrity and excellence, we have grown from a local boutique service to a premier name in high-end transportation.</p>
+                    <p class="mission-text">Our commitment is to provide seamless, luxury transportation experiences that redefine the standards of reliability and comfort. Whether it's a corporate transfer or a private tour, we bring a level of care that is unmatched in the industry.</p>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <img id="missionImageOne" alt="Chauffeur service" class="h-64 w-full rounded-xl object-cover">
-                    <img id="missionImageTwo" alt="Luxury car interior" class="mt-8 h-64 w-full rounded-xl object-cover">
+                <div class="mission-gallery">
+                    <img id="missionImageOne" alt="Chauffeur service" class="mission-image">
+                    <img id="missionImageTwo" alt="Luxury car interior" class="mission-image mission-image--offset">
                 </div>
             </section>
 
-            <section class="bg-[#1152d40d] px-6 py-12 md:px-14 md:py-16">
-                <h3 class="m-0 text-center leading-9 text-[2.3rem] font-extrabold">The Atlas Commitment</h3>
-                <p class="mx-auto mt-4 mb-12 max-w-[640px] text-center text-[16px] leading-6 text-[#475569]">Our core values guide every mile we drive and every interaction we have with our clients.</p>
-                <div id="valuesCards" class="flex gap-5 justify-center">
+            <section class="values-section">
+                <h3 class="section-title section-title--center">The Atlas Commitment</h3>
+                <p class="section-subtitle section-subtitle--center">Our core values guide every mile we drive and every interaction we have with our clients.</p>
+                <div id="valuesCards" class="card-row values-cards">
                     <!-- valuesCards -->
                 </div>
             </section>
 
-            <section class="px-0 py-12 md:px-14 md:py-16">
-                <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <section class="team-section">
+                <div class="team-intro">
                     <div>
-                        <h3 class="m-0 leading-9 text-[2.3rem] font-extrabold">The Team Behind the Wheel</h3>
-                        <p class="mt-4 mb-0 max-w-[580px] text-[16px] leading-6 text-[#475569]">Our success is built on a team of professionals who share a passion for service excellence.</p>
+                        <h3 class="section-title">The Team Behind the Wheel</h3>
+                        <p class="section-subtitle section-subtitle--compact">Our success is built on a team of professionals who share a passion for service excellence.</p>
                     </div>
-                    <a href="#" class="text-[16px] font-bold text-[#1152d4] no-underline group">Join our team <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all duration-300"></i></a>
+                    <a href="#" class="team-link">Join our team <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div id="teamCards" class="flex gap-5 justify-center">
+                <div id="teamCards" class="card-row team-cards">
                     <!-- teamCards -->
                 </div>
             </section>
 
-            <section class="grid gap-12 px-0 pb-16 md:grid-cols-2 md:gap-16 md:px-14 md:pb-20">
+            <section class="network-section">
                 <div>
-                    <img id="mapImage" alt="Atlas Drive service map" class="w-full rounded-xl shadow-[0_10px_30px_rgba(15,23,42,0.12)]">
+                    <img id="mapImage" alt="Atlas Drive service map" class="network-map">
                 </div>
                 <div>
-                    <h3 class="m-0 leading-9 text-[2.3rem] font-extrabold">A Growing Network</h3>
-                    <p class="mt-4 mb-6 text-[18px] leading-7 text-[#475569]">Starting from our flagship office in Manhattan, Atlas Drive has expanded to cover major metropolitan hubs across the country. Our network is built on local expertise and global standards.</p>
-                    <div id="networkStats" class="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                    <h3 class="section-title">A Growing Network</h3>
+                    <p class="network-text">Starting from our flagship office in Manhattan, Atlas Drive has expanded to cover major metropolitan hubs across the country. Our network is built on local expertise and global standards.</p>
+                    <div id="networkStats" class="network-stats">
                         <!-- networkStatsElement -->
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="bg-[#0f172a] px-6 py-12 text-[#94a3b8] md:px-20">
-            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <footer class="site-footer site-footer--dark">
+            <div class="footer-grid">
                 <div>
-                    <div class="flex items-center gap-2">
-                        <img src="../Source/Background.png" alt="Atlas Drive logo" class="h-6 w-6">
-                        <h1 class="m-0 text-[20px] font-bold text-white">Atlas Drive</h1>
+                    <div class="footer-brand">
+                        <img src="../Source/Logo.png" alt="Atlas Drive logo" class="footer-logo">
+                        <h1 class="footer-title footer-title--light">Atlas Drive</h1>
                     </div>
-                    <p class="mt-6 mb-0 text-[14px] leading-[22px]">Premier luxury transportation services for corporate and private clients. Reliability you can trust, comfort you deserve.</p>
+                    <p class="footer-text">Premier luxury transportation services for corporate and private clients. Reliability you can trust, comfort you deserve.</p>
                 </div>
                 <div>
-                    <h4 class="m-0 mb-6 text-[16px] font-bold text-white">Services</h4>
-                    <ul class="m-0 grid gap-4 p-0 text-[14px]">
+                    <h4 class="footer-heading footer-heading--light">Services</h4>
+                    <ul class="footer-list">
                         <li>Airport Transfers</li>
                         <li>Corporate Travel</li>
                         <li>Special Events</li>
@@ -116,8 +117,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="m-0 mb-6 text-[16px] font-bold text-white">Company</h4>
-                    <ul class="m-0 grid gap-4 p-0 text-[14px]">
+                    <h4 class="footer-heading footer-heading--light">Company</h4>
+                    <ul class="footer-list">
                         <li>About Us</li>
                         <li>Our Fleet</li>
                         <li>Careers</li>
@@ -125,20 +126,20 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="m-0 mb-6 text-[16px] font-bold text-white">Contact</h4>
-                    <ul class="m-0 grid gap-4 p-0 text-[14px]">
+                    <h4 class="footer-heading footer-heading--light">Contact</h4>
+                    <ul class="footer-list">
                         <li><i class="fa-regular fa-envelope"></i> info@atlasdrive.com</li>
                         <li><i class="fa-solid fa-phone"></i> +1 (800) ATLAS-DR</li>
                         <li><i class="fa-solid fa-location-dot"></i> 5th Ave, New York, NY</li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-8 flex flex-col gap-4 border-t border-[#1e293b] pt-6 md:flex-row md:items-center md:justify-between">
-                <p class="m-0 text-[12px] leading-4">&copy; 2024 Atlas Drive Global Transportation. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="text-[12px] leading-4 text-[#94a3b8] no-underline">Privacy Policy</a>
-                    <a href="#" class="text-[12px] leading-4 text-[#94a3b8] no-underline">Terms of Service</a>
-                    <a href="#" class="text-[12px] leading-4 text-[#94a3b8] no-underline">Cookies</a>
+            <div class="footer-bottom footer-bottom--dark">
+                <p class="footer-copy">&copy; 2024 Atlas Drive Global Transportation. All rights reserved.</p>
+                <div class="footer-links footer-links--dark">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,11 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.testing-page {
+    padding: 12.5rem;
+}

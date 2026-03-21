@@ -1,8 +1,8 @@
 export const AboutAssets = {
-    hero: "https://www.figma.com/api/mcp/asset/ea00cc0c-6733-4c6b-b108-bbcd5c1e0515",
-    missionOne: "https://www.figma.com/api/mcp/asset/1b6df404-b8c6-44ff-8968-d908718f446f",
-    missionTwo: "https://www.figma.com/api/mcp/asset/c597c908-3366-45b1-815e-cc9f3f661871",
-    map: "https://www.figma.com/api/mcp/asset/8b993754-366f-4c6e-ad65-68522dbe78a0"
+    hero: "../Source/Assets_About/Backound.png",
+    missionOne: "../Source/Assets_About/Img1_Seaction1.png",
+    missionTwo: "../Source/Assets_About/Img1_Seaction2.png",
+    map: "../Source/Assets_About/Map.png"
 };
 
 export const ValuesData = [
@@ -25,25 +25,29 @@ export const ValuesData = [
 
 export const TeamData = [
     {
-        image: "https://www.figma.com/api/mcp/asset/cab0069e-a47a-4fa4-96ca-28deb5e13ebc",
+        image: "../Source/Assets_About/Img2_Seaction1.png",
         name: "Julian Vane",
         role: "Founder & CEO"
     },
     {
-        image: "https://www.figma.com/api/mcp/asset/594bebe7-b2ec-4b4e-926a-4584ff51d260",
+        image: "../Source/Assets_About/Img2_Seaction2.png",
         name: "Elena Rodriguez",
         role: "Head of Operations"
     },
     {
-        image: "https://www.figma.com/api/mcp/asset/2b000e6a-bada-4df9-b481-61e5231d17ca",
+        image: "../Source/Assets_About/Img2_Seaction3.png",
         name: "Marcus Chen",
         role: "Lead Chauffeur"
     },
     {
-        image: "https://www.figma.com/api/mcp/asset/d087bf98-9042-491d-bb9b-7cd3a37bf704",
+        image: "../Source/Assets_About/Img2_Seaction4.png.png",
         name: "Sophia Sterling",
         role: "Client Relations"
-    }
+    },{
+        image: "../Source/Assets_About/Img2_Seaction1.png",
+        name: "Younes BenVane",
+        role: "Marking"
+    },
 ];
 
 export const NetworkStatsData = [
