@@ -1,10 +1,16 @@
 import { CarData } from "../DataBase.js";
+import { NavbarSecondary } from "/Components_Globale/Navbar.js";
+import { Footer } from "/Components_Globale/Footer.js";
 
+const NavbarElement = document.getElementById("header")
+NavbarElement.innerHTML = NavbarSecondary()
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 const data = CarData.find(item => item.id == id);
+
+document.title = `${data.name} - Atlas Drive`;
 
 const PriceElement = document.getElementById("price");
 PriceElement.innerHTML = `$${data.price}`;
@@ -41,6 +47,9 @@ seatingElement.innerHTML = data.seating;
 
 const imageElement = document.getElementById("image");
 imageElement.src = data.image;
+
+const FooterElement = document.getElementById("footer");
+FooterElement.innerHTML = Footer(false);
 
 
 document.addEventListener("DOMContentLoaded", (event) => {

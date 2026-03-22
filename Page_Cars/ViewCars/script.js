@@ -1,8 +1,17 @@
 import { carCards } from "./Data/data.js";
 import { CarCard } from "./Components/CarCard.js";
+import { NavbarSecondary } from "/Components_Globale/Navbar.js";
+import { FooterShort } from "../../Components_Globale/Footer.js";
+
+const NavbarElement = document.getElementById("header")
+NavbarElement.innerHTML = NavbarSecondary()
 
 const carGrid = document.getElementById("CarGrid");
 carGrid.innerHTML = carCards.map((card) => CarCard(card)).join("");
+
+const FooterElement = document.getElementById("footer");
+FooterElement.innerHTML = FooterShort(false);
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger,ScrollSmoother)
