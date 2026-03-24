@@ -1,10 +1,10 @@
 import { carCards } from "./Data/data.js";
 import { CarCard } from "./Components/CarCard.js";
-import { NavbarSecondary } from "/Components_Globale/Navbar.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
 import { FooterShort } from "../../Components_Globale/Footer.js";
 
 const NavbarElement = document.getElementById("header")
-NavbarElement.innerHTML = NavbarSecondary()
+NavbarElement.innerHTML = NavbarPrincipal("Cars")
 
 const carGrid = document.getElementById("CarGrid");
 carGrid.innerHTML = carCards.map((card) => CarCard(card)).join("");

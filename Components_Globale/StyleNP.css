@@ -9,14 +9,25 @@ button {
     background: none;
 }
 
-
 .site-header {
+    backdrop-filter: blur(6px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.90rem 3.75rem;
     max-width: 1280px;
     margin: 0 auto;
+
+}
+
+.bg-nav {
+    background-color: #fff;
+    backdrop-filter: blur(6px);
+    
+}
+
+.site-header #nav {
+    position: relative;
 }
 
 .logo {
@@ -30,6 +41,7 @@ button {
     font-size: 18px;
     font-weight: 800;
     letter-spacing: -0.5px;
+    display: block;
 }
 
 .nav-list {
@@ -39,6 +51,34 @@ button {
     padding: 0;
     list-style: none;
     font-weight: 600;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: min(80vw, 320px);
+    padding: 96px 24px 24px;
+    z-index: 100;
+    color: #000000;
+    background-color: #ffffffea;
+    backdrop-filter: blur(6px);
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(110%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 250ms ease, opacity 250ms ease;
+}
+
+.site-header #nav.active .nav-list {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.site-header #nav.noactive .nav-list {
+    transform: translateX(110%);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .nav-list a {
@@ -59,8 +99,16 @@ button {
 }
 
 .header-actions {
+    display: none;
+    gap: 1rem;
+}
+
+.header-actionsflex {
     display: flex;
     gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
 }
 
 .btn {
@@ -89,4 +137,64 @@ button {
 .btn-primary:hover {
     background: var(--blue-500);
     transform: scale(1.02);
+}
+
+.icon-nav {
+    z-index: 120;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.icon-f {
+    display: block;
+    z-index: 120;
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .site-header #nav {
+        position: static;
+    }
+
+    .nav-list {
+        position: relative;
+        background-color: initial;
+        height: auto;
+        width: auto;
+        padding: 0;
+        color: #000;
+        backdrop-filter: blur(0px);
+        flex-direction: row;
+        align-items: center;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .site-header #nav.active .nav-list,
+    .site-header #nav.noactive .nav-list {
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header-actionsflex {
+        display: none;
+        gap: 1rem;
+    }
+
+    .icon-f {
+        display: none;
+    }
+
 }

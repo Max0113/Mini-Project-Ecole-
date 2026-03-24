@@ -32,3 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
         smoothTouch: 0.1
     });
 });
+
+
