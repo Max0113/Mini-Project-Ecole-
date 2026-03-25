@@ -1,86 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    min-height: 100vh;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
-    justify-content: center;
-    background-color: rgb(236, 236, 236);
-}
-.info{
-    flex: content;
-    justify-content: center;
-}
-.fath {
-    width: 480px;
-    height: auto;
-    border: 1px solid;
-    background-color: rgb(255, 255, 255, 1);
-    border-color: rgb(236, 232, 240, 1) ;
-    justify-self: center;
-    margin: 32px;
-    border-radius: 12px;
-}
-a{
-    text-decoration: none;
-}
-.sing{
-    border: 0px solid;
-    width: 500px; 
-    height: auto;
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    justify-self: center;
     align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(51, 65, 85);
+}
+
+.fath {
+    width: min(100%, 480px);
+    border: 1px solid rgb(236, 232, 240);
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+    min-height: 685px;
+}
+
+.sing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.icon {
+    margin: 8px;
+    max-width: 170px;
+    height: auto;
+}
+
+.hed {
+    margin: 0;
+    text-align: center;
+}
+
+.subtext {
+    margin: 12px 0 24px;
+    text-align: center;
+    color: rgb(100, 116, 139);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dic {
+    width: 100%;
+}
+
+.labe {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inp {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(203, 213, 225);
+    border-radius: 8px;
+    font: inherit;
+}
+
+.inp:focus {
+    outline: 2px solid rgba(56, 56, 210, 0.2);
+    border-color: rgb(56, 56, 210);
+}
+
+.fle {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: rgb(17, 82, 212);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button,
+.con {
+    width: 100%;
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 12px;
+    padding: 12px;
+    font: inherit;
+}
+
+.button {
+    margin-top: 8px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(56, 56, 210);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: rgb(70, 70, 235);
+    transform: translateY(-1px);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    color: rgb(148, 163, 184);
+    font-size: 14px;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgb(203, 213, 225);
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    color: rgba(51, 65, 85, 1);
+}
+
+.con img {
+    width: 20px;
+    height: 20px;
+}
+
+.cons:hover {
+    text-decoration: none;
+    background-color: rgb(248, 250, 252);
+}
+
+.kaka {
+    margin: 24px 0 0;
+    text-align: center;
 }
 
 footer {
-    justify-self: center;
-}
-.kaka {
-    justify-self: center;
-}
-.button{
-    width: 85%;
-    padding: 8px;
-    font-weight: bolder;
-    background-color: rgb(56, 56, 210);
-    border-radius: 7px;
-    margin: 10px;
-}
-.button:hover {
-    background-color: rgb(122, 122, 254);
-    transform: scale(1.1);
-    transition: ease-in-out 0.5s;
-}
-.labe {
-    display: block;
-    padding-bottom: 12px;
-    padding-top: 12px;
-}
-.inp {
-    width: 80%;
-    margin-bottom: 7px;
-    padding: 5px;
-}
-.head {
-    align-self: center;
-}
-button {
-    color:  rgba(51, 65, 85, 1);
-    border: 1px solid rgba(226, 232, 240, 1);
-    border-radius: 12px ;
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 52.52px;
-    margin-right: 52.53px;
-}
-icon {
-    margin: 8px;
-}
-.hed {
-    margin: 3px;
+    margin-top: 16px;
     text-align: center;
+    color: rgb(100, 116, 139);
 }
-a {
-    color:rgba(17, 82, 212, 1);
+
+@media (max-width: 520px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .sing {
+        padding: 20px 16px;
+    }
 }
