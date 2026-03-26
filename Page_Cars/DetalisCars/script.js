@@ -1,9 +1,9 @@
 import { CarData } from "../DataBase.js";
-import { NavbarSecondary } from "/Components_Globale/Navbar.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
 import { Footer } from "/Components_Globale/Footer.js";
 
 const NavbarElement = document.getElementById("header")
-NavbarElement.innerHTML = NavbarSecondary()
+NavbarElement.innerHTML = NavbarPrincipal("Cars")
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");

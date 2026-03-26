@@ -43,11 +43,7 @@ export const TeamData = [
         image: "../Source/Assets_About/Img2_Seaction4.png.png",
         name: "Sophia Sterling",
         role: "Client Relations"
-    },{
-        image: "../Source/Assets_About/Img2_Seaction1.png",
-        name: "Younes BenVane",
-        role: "Marking"
-    },
+    }
 ];
 
 export const NetworkStatsData = [
