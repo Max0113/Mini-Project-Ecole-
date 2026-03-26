@@ -1,8 +1,8 @@
 import { ValueCard } from "./Components/ValueCard.js";
 import { TeamCard } from "./Components/TeamCard.js";
 import { AboutAssets, ValuesData, TeamData, NetworkStatsData } from "./Data/data.js";
-import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
-import { Footer } from "/Components_Globale/Footer.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar/Navbar.js";
+import { Footer } from "/Components_Globale/Footer/Footer.js";
 
 const NavbarElement = document.getElementById("header")
 NavbarElement.innerHTML = NavbarPrincipal("About")
@@ -15,7 +15,6 @@ const mapImage = document.getElementById("mapImage");
 heroImage.src = AboutAssets.hero;
 missionImageOne.src = AboutAssets.missionOne;
 missionImageTwo.src = AboutAssets.missionTwo;
-mapImage.src = AboutAssets.map;
 
 const valuesCardsElement = document.getElementById("valuesCards");
 valuesCardsElement.innerHTML = ValuesData.map((card) => ValueCard(card)).join("");
@@ -25,8 +24,8 @@ teamCardsElement.innerHTML = TeamData.map((card) => TeamCard(card)).join("");
 
 const networkStatsElement = document.getElementById("networkStats");
 networkStatsElement.innerHTML = NetworkStatsData.map((item) => `
-    <div class="flex items-center gap-2 text-[16px] leading-6 font-medium text-[#0f172a]">
-        <i class="fa-regular fa-circle-check text-[14px] text-[#2968ff]"></i>
+    <div>
+        <i class="fa-regular fa-circle-check"></i>
         <span>${item}</span>
     </div>
 `).join("");

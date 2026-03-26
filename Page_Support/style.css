@@ -6,7 +6,7 @@
     --blue-500: #205dd6;
     --slate-900: #0f172a;
     --slate-600: #475569;
-     --slate-700: #334155;
+    --slate-700: #334155;
     --slate-500: #64748b;
     --slate-400: #94a3b8;
     --slate-200: #e2e8f0;
@@ -47,18 +47,18 @@ body {
 
 .section-title {
     margin: 0 0 1rem;
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 24px);
     font-weight: 800;
 }
 
 .section-title--small {
     margin-top: 2.5rem;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
 }
 
 .section-subtitle {
     margin: 0.5rem 0 0;
-    font-size: 15px;
+    font-size: clamp(13px, 2.2vw, 15px);
     line-height: 1.6;
     color: var(--slate-600);
 }
@@ -95,14 +95,14 @@ body {
 
 .support-hero-title {
     margin: 0;
-    font-size: 40px;
+    font-size: clamp(32px, 8vw, 40px);
     font-weight: 800;
     line-height: 1.1;
 }
 
 .support-hero-text {
     margin: 0.75rem 0 0;
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.6;
     color: #e2e8f0;
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .contact-title {
-    font-size: 12px;
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     letter-spacing: 0.7px;
     color: var(--slate-500);
@@ -158,14 +158,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    font-size: 15px;
+    font-size: clamp(13px, 2.2vw, 15px);
     color: var(--slate-900);
     font-weight: 600;
 }
 
 .contact-note {
     margin-top: 0.4rem;
-    font-size: 13px;
+    font-size: clamp(12px, 1.8vw, 13px);
     color: var(--slate-500);
 }
 
@@ -194,7 +194,7 @@ body {
     background: #ffffff;
     padding: 0.6rem 0.9rem;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: clamp(12px, 1.8vw, 13px);
     font-weight: 700;
     color: var(--slate-700);
     box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
@@ -230,7 +230,7 @@ body {
 }
 
 .field-label {
-    font-size: 12px;
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     color: var(--slate-600);
 }
@@ -240,7 +240,7 @@ body {
     padding: 0.75rem 0.9rem;
     border-radius: 10px;
     border: 1px solid var(--slate-200);
-    font-size: 14px;
+    font-size: clamp(12px, 2vw, 14px);
     font-family: inherit;
     outline: none;
     transition: border 200ms ease, box-shadow 200ms ease;
@@ -282,7 +282,7 @@ body {
     border: none;
     background: var(--blue-600);
     color: #ffffff;
-    font-size: 14px;
+    font-size: clamp(12px, 2vw, 14px);
     font-weight: 700;
     display: inline-flex;
     align-items: center;

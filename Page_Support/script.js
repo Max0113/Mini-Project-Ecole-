@@ -1,7 +1,7 @@
 ﻿import { ContactCard } from "./Components/ContactCard.js";
 import { ContactCardsData, SupportAssets } from "./Data/data.js";
-import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
-import { Footer } from "/Components_Globale/Footer.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar/Navbar.js";
+import { Footer } from "/Components_Globale/Footer/Footer.js";
 
 const NavbarElement = document.getElementById("header");
 NavbarElement.innerHTML = NavbarPrincipal("Support");

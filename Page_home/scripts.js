@@ -3,8 +3,8 @@ import { CardServices } from "./Components/CardServices.js";
 import { CardHowUse } from "./Components/CardHowUse.js";
 import { CardTestimonials } from "./Components/CardTestimonials.js";
 import { CardFeaturedData, CardServicesData, CardHowUseData, CardTestimonialsData } from "./Data/data.js";
-import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
-import { Footer } from "/Components_Globale/Footer.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar/Navbar.js";
+import { Footer } from "/Components_Globale/Footer/Footer.js";
 
 const NavbarElement = document.getElementById("header");
 NavbarElement.innerHTML = NavbarPrincipal("Home");

@@ -2,7 +2,6 @@ export const AboutAssets = {
     hero: "../Source/Assets_About/Backound.png",
     missionOne: "../Source/Assets_About/Img1_Seaction1.png",
     missionTwo: "../Source/Assets_About/Img1_Seaction2.png",
-    map: "../Source/Assets_About/Map.png"
 };
 
 export const ValuesData = [

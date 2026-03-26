@@ -1,11 +1,12 @@
 import { CarData } from "../DataBase.js";
-import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
-import { Footer } from "/Components_Globale/Footer.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar/Navbar.js";
+import { Footer } from "/Components_Globale/Footer/Footer.js";
 
 const NavbarElement = document.getElementById("header")
 NavbarElement.innerHTML = NavbarPrincipal("Cars")
 
 const params = new URLSearchParams(window.location.search);
+console.log(params.get("id"));
 const id = params.get("id");
 
 const data = CarData.find(item => item.id == id);

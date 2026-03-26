@@ -55,12 +55,12 @@ button {
 
 .cars-layout {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 256px 1fr;
     gap: 2rem;
 }
 
 .filters {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
@@ -72,7 +72,8 @@ button {
 }
 
 .filter-title {
-    font-size: 14px;
+    /* Mobile 12px to Desktop 14px */
+    font-size: clamp(12px, 2vw, 14px);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -83,7 +84,8 @@ button {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    font-size: 14px;
+    /* Mobile 12px to Desktop 14px */
+    font-size: clamp(12px, 2vw, 14px);
 }
 
 .filter-option {
@@ -119,7 +121,8 @@ button {
     border: 1px solid var(--slate-200);
     border-radius: 0.75rem;
     padding: 0.625rem 2.5rem 0.625rem 1rem;
-    font-size: 0.875rem;
+    /* Mobile 0.8rem to Desktop 0.875rem */
+    font-size: clamp(0.8rem, 1.5vw, 0.875rem);
     font-weight: 700;
     color: #1e293b;
     cursor: pointer;
@@ -149,7 +152,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     color: var(--slate-500);
 }
@@ -164,7 +168,8 @@ button {
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     border: 1px solid var(--slate-200);
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     color: var(--slate-600);
     cursor: pointer;
@@ -186,7 +191,8 @@ button {
 }
 
 .promo-tag {
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
@@ -195,7 +201,8 @@ button {
 
 .promo-title {
     margin-top: 0.25rem;
-    font-size: 18px;
+    /* Mobile 16px to Desktop 18px */
+    font-size: clamp(16px, 3vw, 18px);
     font-weight: 800;
     line-height: 1.5rem;
 }
@@ -204,7 +211,8 @@ button {
     margin-top: 1rem;
     background: #ffffff;
     color: var(--blue-600);
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -227,14 +235,16 @@ button {
 
 .results-title {
     margin: 0;
-    font-size: 24px;
+    /* Mobile 20px to Desktop 24px */
+    font-size: clamp(20px, 4vw, 24px);
     font-weight: 800;
     letter-spacing: -0.6px;
 }
 
 .results-subtitle {
     margin: 0;
-    font-size: 14px;
+    /* Mobile 12px to Desktop 14px */
+    font-size: clamp(12px, 2vw, 14px);
     color: var(--slate-500);
 }
 
@@ -254,14 +264,15 @@ button {
     border: none;
     outline: none;
     width: 100%;
-    font-size: 14px;
+    /* Mobile 12px to Desktop 14px */
+    font-size: clamp(12px, 2vw, 14px);
     color: var(--slate-500);
     padding: 0 0.75rem;
 }
 
 .car-grid {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
@@ -312,7 +323,8 @@ button {
     bottom: 0.75rem;
     left: 0.75rem;
     color: #ffffff;
-    font-size: 10px;
+    /* Mobile 9px to Desktop 10px */
+    font-size: clamp(9px, 1vw, 10px);
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -357,7 +369,8 @@ button {
 .car-card__name {
     margin: 0;
     color: var(--slate-900);
-    font-size: 15px;
+    /* Mobile 13px to Desktop 15px */
+    font-size: clamp(13px, 2.2vw, 15px);
     font-weight: 700;
     line-height: 1.75rem;
 }
@@ -370,13 +383,15 @@ button {
 
 .car-card__price-value {
     color: var(--blue-600);
-    font-size: 18px;
+    /* Mobile 16px to Desktop 18px */
+    font-size: clamp(16px, 3vw, 18px);
     font-weight: 800;
 }
 
 .car-card__price-unit {
     color: var(--slate-500);
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
 }
 
@@ -385,7 +400,8 @@ button {
     align-items: center;
     gap: 1rem;
     color: var(--slate-500);
-    font-size: 12px;
+    /* Mobile 11px to Desktop 12px */
+    font-size: clamp(11px, 1.2vw, 12px);
 }
 
 .car-card__meta-item {
@@ -398,7 +414,8 @@ button {
     background: var(--blue-600);
     color: #ffffff;
     font-weight: 700;
-    font-size: 16px;
+    /* Mobile 14px to Desktop 16px */
+    font-size: clamp(14px, 2.5vw, 16px);
     padding: 0.75rem 0;
     border-radius: 8px;
     display: flex;
@@ -414,7 +431,8 @@ button {
 }
 
 .car-card__cta-icon {
-    font-size: 13px;
+    /* Mobile 12px to Desktop 13px */
+    font-size: clamp(12px, 1.8vw, 13px);
     transition: transform 300ms ease;
 }
 
@@ -422,31 +440,26 @@ button {
     transform: translateX(0.25rem);
 }
 
-@media (min-width: 640px) {
+@media (max-width: 1067px) {
+    .cars-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        display: none;
+    }
+
+    .car-card__name {
+        font-size: 18px;
+    }
+
     .car-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (min-width: 1068px) {
-    
-    .cars-layout {
-        grid-template-columns: 256px 1fr;
-    }
-
-    .filters {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .car-card__name {
-        font-size: 18px;
-     }
-
+@media (max-width: 639px) {
     .car-grid {
-    
-     grid-template-columns: repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }

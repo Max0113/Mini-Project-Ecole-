@@ -1,7 +1,7 @@
 import { carCards } from "./Data/data.js";
 import { CarCard } from "./Components/CarCard.js";
-import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
-import { FooterShort } from "../../Components_Globale/Footer.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar/Navbar.js";
+import { FooterShort } from "../../Components_Globale/Footer/Footer.js";
 
 const NavbarElement = document.getElementById("header")
 NavbarElement.innerHTML = NavbarPrincipal("Cars")
@@ -30,5 +30,5 @@ document.querySelectorAll(".rent-btn").forEach(btn => {
 })
 
 function goToDetails(id) {
-    window.location.href = `http://127.0.0.1:5500/Page_Cars/DetalisCars/index.html?id=${id}`
+    window.location.href = `/Page_Cars/DetalisCars/index.html?id=${id}`
 }

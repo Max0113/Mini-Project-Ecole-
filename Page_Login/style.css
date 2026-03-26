@@ -49,6 +49,7 @@ body {
     margin: 0;
     text-align: center;
     margin-bottom: 6px;
+    font-size:clamp(25px, 2.1vw, 30px);
 }
 
 .subtext {
@@ -71,6 +72,7 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
+    font-size: clamp(14px, 2.1vw, 17px);
 }
 
 .inp {
@@ -79,6 +81,7 @@ body {
     border: 1px solid rgb(203, 213, 225);
     border-radius: 8px;
     font: inherit;
+    appearance: none;
 }
 
 .password-box {
@@ -147,7 +150,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    font-size: 14px;
+    font-size: clamp(10px, 2.1vw, 14px);
 }
 
 .remember {
@@ -195,7 +198,6 @@ a:hover {
     gap: 12px;
     margin-top: 18px;
     color: rgb(148, 163, 184);
-    font-size: 14px;
     text-align: center;
     margin-bottom: 6px;
 }
@@ -211,12 +213,14 @@ a:hover {
 .kaka {
     margin: 24px 0 0;
     text-align: center;
+    font-size: clamp(14px, 1.3vw, 15px);
 }
 
 footer {
     margin-top: 16px;
     text-align: center;
     color: rgb(100, 116, 139);
+    font-size: clamp(12px, 2.1vw, 14px);
 }
 
 @media (max-width: 520px) {
@@ -229,7 +233,7 @@ footer {
     }
 
     .row-meta {
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
     }
 }
