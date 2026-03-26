@@ -15,6 +15,14 @@
     padding: 0
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 body {
     margin: 0;
     font-family: "Manrope", sans-serif;
@@ -35,6 +43,10 @@ button {
     font-family: inherit;
     border: none;
     background: none;
+}
+
+.parent {
+    padding-top: 50px;
 }
 
 .site-header {
@@ -172,7 +184,7 @@ button {
 .parent {
     display: grid;
     max-width: 1280px;
-    grid-template-columns: 1fr 450px;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
     margin: 30px auto;
     
@@ -487,6 +499,82 @@ button {
     border-radius: 0.5rem;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .site-header-inner {
+        padding: 0.75rem 1rem;
+    }
+
+    .header-left {
+        gap: 1rem;
+    }
+
+    .nav-list {
+        display: none; /* Hide navigation on mobile for simplicity */
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+
+    .hero-imges .image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .parent {
+        margin: 20px 1rem;
+    }
+
+    .card-service {
+        padding: 20px;
+    }
+
+    .price-rating h1 {
+        font-size: 24px;
+    }
+
+    .price-rating span {
+        font-size: 18px;
+    }
+
+    .data-input {
+        width: 100%;
+    }
+
+    .end-start-data {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .outre-information .cadre {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 20px 0px;
+    }
+
+    .loaction {
+        margin: 10px 1rem;
+    }
+
+    .loaction h1 {
+        font-size: 20px;
+    }
+
+    .frame {
+        height: 200px;
+    }
+
+    .infiramtion-cars,
+    .outre-information {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
 .site-footer {
     background: #ffffff;
     color: var(--slate-500);
@@ -585,5 +673,13 @@ button {
     .footer-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 3rem;
+    }
+
+    .parent {
+        display: grid;
+        max-width: 1280px;
+        grid-template-columns: 1fr 450px;
+        grid-column-gap: 10px;
+        margin: 30px auto
     }
 }
