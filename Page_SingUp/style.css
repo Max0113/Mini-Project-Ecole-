@@ -22,7 +22,7 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
-    min-height: 640px;
+    min-height: 685px;
 }
 
 .sing {
@@ -48,7 +48,6 @@ body {
 .hed {
     margin: 0;
     text-align: center;
-    margin-bottom: 6px;
 }
 
 .subtext {
@@ -103,6 +102,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font: inherit;
     line-height: 1;
     cursor: pointer;
 }
@@ -129,32 +129,22 @@ body {
     opacity: 0.8;
 }
 
-.toggle-password:focus-visible,
-.inp:focus {
-    outline: 2px solid rgba(56, 56, 210, 0.2);
-}
-
 .toggle-password:focus-visible {
+    outline: 2px solid rgba(56, 56, 210, 0.2);
     border-radius: 999px;
 }
 
 .inp:focus {
+    outline: 2px solid rgba(56, 56, 210, 0.2);
     border-color: rgb(56, 56, 210);
 }
 
-.row-meta {
+.fle {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 10px;
     font-size: 14px;
-}
-
-.remember {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: rgb(71, 85, 105);
+    line-height: 1.5;
 }
 
 a {
@@ -166,8 +156,10 @@ a:hover {
     text-decoration: underline;
 }
 
-.button {
+.button,
+.con {
     width: 100%;
+    border: 1px solid rgba(226, 232, 240, 1);
     border-radius: 12px;
     padding: 12px;
     font: inherit;
@@ -175,18 +167,23 @@ a:hover {
 
 .button {
     margin-top: 8px;
-    border: 1px solid rgba(226, 232, 240, 1);
     font-weight: 700;
     color: white;
     background-color: rgb(56, 56, 210);
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
-    margin-bottom: 8px;
 }
 
 .button:hover {
     background-color: rgb(70, 70, 235);
     transform: translateY(-1px);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 18px;
 }
 
 .divider {
@@ -197,7 +194,6 @@ a:hover {
     color: rgb(148, 163, 184);
     font-size: 14px;
     text-align: center;
-    margin-bottom: 6px;
 }
 
 .divider::before,
@@ -206,6 +202,25 @@ a:hover {
     flex: 1;
     height: 1px;
     background-color: rgb(203, 213, 225);
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    color: rgba(51, 65, 85, 1);
+}
+
+.con img {
+    width: 20px;
+    height: 20px;
+}
+
+.cons:hover {
+    text-decoration: none;
+    background-color: rgb(248, 250, 252);
 }
 
 .kaka {
@@ -226,10 +241,5 @@ footer {
 
     .sing {
         padding: 20px 16px;
-    }
-
-    .row-meta {
-        flex-direction: column;
-        align-items: stretch;
     }
 }

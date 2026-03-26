@@ -13,14 +13,14 @@ export function NavbarPrincipal(index) {
                         <li><a href="/Page_Support/index.html" class="${index == "Support" ? "is-active" : ""}">Support</a></li>
                         <li><a href="/Page_About/index.html" class="${index == "About" ? "is-active" : ""}">About</a></li>
                         <div class="header-actionsflex">
-                            <button class="btn btn-secondary">Login</button>
-                            <button class="btn btn-primary">Sgin up</button>
+                            <button onclick="window.location.href='/Page_Login/index.html'" class="btn btn-secondary">Login</button>
+                            <button onclick="window.location.href='/Page_SingUp/index.html'" class="btn btn-primary">Sgin up</button>
                         </div>
                     </ul>
                 </nav>
                 <div class="header-actions">
-                    <button class="btn btn-secondary">Login</button>
-                    <button class="btn btn-primary">Sgin up</button>
+                    <button onclick="window.location.href='/Page_Login/index.html'" class="btn btn-secondary">Login</button>
+                    <button onclick="window.location.href='/Page_SingUp/index.html'" class="btn btn-primary">Sgin up</button>
                 </div>
                 <div class="icon-f">
                     <i id="icon" class="fa-solid fa-bars icon-nav"></i>
