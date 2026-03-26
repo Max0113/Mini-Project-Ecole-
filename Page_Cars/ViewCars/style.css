@@ -18,6 +18,14 @@ body {
     font-optical-sizing: auto;
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .page {
     color: var(--slate-900);
     background: #f6f6f8;
@@ -32,6 +40,10 @@ button {
     font-family: inherit;
     border: none;
     background: none;
+}
+
+.page-shell {
+    padding-top: 50px;
 }
 
 .page-content {

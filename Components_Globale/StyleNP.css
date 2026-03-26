@@ -55,7 +55,7 @@ button {
     right: 0;
     top: 0;
     height: 100vh;
-    width: min(80vw, 320px);
+    width: 30vh;
     padding: 96px 24px 24px;
     z-index: 100;
     color: #000000;
@@ -156,7 +156,7 @@ button {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px){
     .site-header #nav {
         position: static;
     }
