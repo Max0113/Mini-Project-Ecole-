@@ -1,6 +1,11 @@
 import { ValueCard } from "./Components/ValueCard.js";
 import { TeamCard } from "./Components/TeamCard.js";
 import { AboutAssets, ValuesData, TeamData, NetworkStatsData } from "./Data/data.js";
+import { NavbarPrincipal } from "/Components_Globale/Navbar.js";
+import { Footer } from "/Components_Globale/Footer.js";
+
+const NavbarElement = document.getElementById("header")
+NavbarElement.innerHTML = NavbarPrincipal("About")
 
 const heroImage = document.getElementById("heroImage");
 const missionImageOne = document.getElementById("missionImageOne");
@@ -26,6 +31,9 @@ networkStatsElement.innerHTML = NetworkStatsData.map((item) => `
     </div>
 `).join("");
 
+const FooterElement = document.getElementById("footer");
+FooterElement.innerHTML = Footer(true);
+
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -35,3 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
         smoothTouch: 0.1
     });
 });
+
+
