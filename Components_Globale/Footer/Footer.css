@@ -39,7 +39,6 @@
 
 .footer-title {
     margin: 0;
-    /* Mobile 16px to Desktop 20px */
     font-size: clamp(16px, 3vw, 20px);
     font-weight: 700;
 
@@ -48,14 +47,12 @@
 .footer-text {
     margin-top: 1.5rem;
     margin-bottom: 0;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
     line-height: 22px;
 }
 
 .footer-heading {
     margin: 0 0 1.5rem;
-    /* Mobile 14px to Desktop 16px */
     font-size: clamp(14px, 2.5vw, 16px);
     font-weight: 700;
 
@@ -67,7 +64,6 @@
     padding: 0;
     display: grid;
     gap: 1rem;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
 }
 
@@ -84,7 +80,6 @@
 
 .footer-copy {
     margin: 0;
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     line-height: 1rem;
 }

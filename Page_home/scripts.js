@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
+console.log(window.innerWidth)

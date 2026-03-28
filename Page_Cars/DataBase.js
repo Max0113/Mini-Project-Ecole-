@@ -4,7 +4,7 @@ export const CarData = [
         image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Porsche_911_Carrera_%287266826444%29.jpg",
         label: "Luxury",
         labelClass: "label--luxury",
-        name: "Porsche 911 Carvarera",
+        name: "Porsche 911",
         price: "250",
         transmission: "Auto",
         transmissionIcon: "fa-solid fa-gear",

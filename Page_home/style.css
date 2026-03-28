@@ -23,7 +23,7 @@
 }
 
 .parent {
-    padding-top: 60px;
+    padding-top: 52px;
 }
 
 body {
@@ -185,7 +185,6 @@ button {
 .section-subtitle {
     margin: 0;
     color: var(--slate-500);
-    /* Mobile 0.8rem to Desktop 0.9rem */
     font-size: clamp(0.8rem, 1.6vw, 0.9rem);
 }
 
@@ -269,7 +268,6 @@ button {
 .testimonial-stars {
     margin: 0;
     color: #ffd700;
-    /* Mobile 1.2rem to Desktop 1.45rem */
     font-size: clamp(1.2rem, 2.2vw, 1.45rem);
     line-height: 1;
 }
@@ -277,7 +275,6 @@ button {
 .testimonial-quote {
     margin: 0;
     color: var(--slate-200);
-    /* Mobile 0.95rem to Desktop 1.15rem */
     font-size: clamp(0.95rem, 2vw, 1.15rem);
     font-weight: 200;
 }
@@ -286,7 +283,6 @@ button {
     margin: 0;
     font-weight: 800;
     color: #ffffff;
-    /* Mobile 1.1rem to Desktop 1.35rem */
     font-size: clamp(1.1rem, 2.1vw, 1.35rem);
 }
 
@@ -309,7 +305,6 @@ button {
 }
 
 .featured-cars-title {
-    /* Mobile 16px to Desktop 20px */
     font-size: clamp(16px, 3vw, 20px);
 }
 
@@ -324,7 +319,6 @@ button {
 }
 
 .featured-cars-price {
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: bold;
     color: var(--blue-500);
@@ -335,7 +329,6 @@ button {
 
 .featured-cars-description {
     margin: 0;
-    /* Mobile 13px to Desktop 15px */
     font-size: clamp(13px, 2.2vw, 15px);
     font-weight: 100;
     color: var(--slate-500);
@@ -349,13 +342,11 @@ button {
 }
 
 .featured-cars-icon {
-    /* Mobile 12px to Desktop 13px */
     font-size: clamp(12px, 1.8vw, 13px);
     color: var(--slate-500);
 }
 
 .featured-cars-icon-title {
-    /* Mobile 12px to Desktop 13px */
     font-size: clamp(12px, 1.8vw, 13px);
     color: var(--slate-500);
 }

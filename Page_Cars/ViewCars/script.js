@@ -32,3 +32,4 @@ document.querySelectorAll(".rent-btn").forEach(btn => {
 function goToDetails(id) {
     window.location.href = `/Page_Cars/DetalisCars/index.html?id=${id}`
 }
+

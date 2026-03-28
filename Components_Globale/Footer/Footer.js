@@ -31,8 +31,8 @@ export function Footer(color) {
                         <h4 class="footer-heading ${color ? "while-col" : "dark-col"}">Contact</h4>
                         <ul class="footer-list">
                             <li><i class="fa-regular fa-envelope"></i> info@atlasdrive.com</li>
-                            <li><i class="fa-solid fa-phone"></i> +1 (800) ATLAS-DR</li>
-                            <li><i class="fa-solid fa-location-dot"></i> 5th Ave, New York, NY</li>
+                            <li><i class="fa-solid fa-phone"></i> +212 XXX XXX XX</li>
+                            <li><i class="fa-solid fa-location-dot"></i> 5th Maroc, Agadir</li>
                         </ul>
                     </div>
                 </div>

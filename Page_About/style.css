@@ -330,7 +330,6 @@ button {
 
 .network-text {
     margin: 1rem 0 1.5rem;
-    /* Mobile 15px to Desktop 18px */
     font-size: clamp(15px, 3vw, 18px);
     line-height: 1.75rem;
     color: var(--slate-600);

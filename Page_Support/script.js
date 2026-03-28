@@ -29,4 +29,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Email req
 
+const form_name    = document.getElementById("form_name");
+const form_email   = document.getElementById("form_email");
+const inquiry_type = document.getElementById("form_inquiry");
+const message      = document.getElementById("form_message");
+
+
+document.querySelector("#Send").addEventListener("click", function () {
+
+    var Data = {
+        title        : "Support",
+        to_name      : "CEO",
+        form_name    : form_name.value,
+        form_email   : form_email.value,
+        inquiry_type : inquiry_type.value,
+        message      : message.value
+    };
+
+    emailjs.send('service_b8wgqus', 'template_5te6zo4', Data).then(
+        (response) => {
+            form_name.value    = "";
+            form_email.value   = "";
+            inquiry_type.value = "";
+            message.value      = "";
+            alert('SUCCESS! ✅')
+            console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+            alert('FAILED! ❎')
+            console.log('FAILED...', error);
+        },
+    );
+})

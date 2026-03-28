@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="/Components_Globale/Navbar/StyleNP.css">
     <link rel="stylesheet" href="/Components_Globale/Footer/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "hhOCSYuYsUek6VGGA",
+            });
+        })();
+    </script>
 </head>
 <body class="page">
     <header id="header">
@@ -57,21 +67,21 @@
                         </div>
                         <form class="support-form">
                             <label class="form-field form-field--half">
-                                <span class="field-label">First Name</span>
-                                <input type="text" name="firstName" class="field-input" placeholder="John" />
+                                <span class="field-label">First Name *</span>
+                                <input id="form_name" type="text" name="firstName" class="field-input" placeholder="John" required/>
                             </label>
                             <label class="form-field form-field--half">
                                 <span class="field-label">Last Name</span>
                                 <input type="text" name="lastName" class="field-input" placeholder="Doe" />
                             </label>
                             <label class="form-field form-field--full">
-                                <span class="field-label">Email Address</span>
-                                <input type="email" name="email" class="field-input" placeholder="john@example.com" />
+                                <span class="field-label">Email Address *</span>
+                                <input id="form_email" type="email" name="email" class="field-input" placeholder="john@example.com" required/>
                             </label>
                             <label class="form-field form-field--full">
                                 <span class="field-label">Inquiry Type</span>
                                 <div class="select-wrapper">
-                                    <select name="inquiryType" class="field-input">
+                                    <select id="form_inquiry" name="inquiryType" class="field-input">
                                         <option value="general">General Inquiry</option>
                                         <option value="booking">Bookings & Pricing</option>
                                         <option value="corporate">Corporate Accounts</option>
@@ -81,10 +91,10 @@
                                 </div>
                             </label>
                             <label class="form-field form-field--full">
-                                <span class="field-label">Message</span>
-                                <textarea name="message" class="field-input field-textarea" placeholder="How can we help you?" rows="4"></textarea>
+                                <span class="field-label">Message *</span>
+                                <textarea id="form_message" name="message" class="field-input field-textarea" placeholder="How can we help you?" rows="4" required></textarea>
                             </label>
-                            <button type="submit" class="btn-primary--outline">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+                            <button type="submit" class="btn-primary--outline" id="Send">Send Message <i class="fa-solid fa-arrow-right"></i></button>
                         </form>
                     </div>
                 </aside>

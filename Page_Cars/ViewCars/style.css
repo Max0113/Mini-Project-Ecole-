@@ -72,7 +72,6 @@ button {
 }
 
 .filter-title {
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
     font-weight: 700;
     text-transform: uppercase;
@@ -84,7 +83,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
 }
 
@@ -121,7 +119,6 @@ button {
     border: 1px solid var(--slate-200);
     border-radius: 0.75rem;
     padding: 0.625rem 2.5rem 0.625rem 1rem;
-    /* Mobile 0.8rem to Desktop 0.875rem */
     font-size: clamp(0.8rem, 1.5vw, 0.875rem);
     font-weight: 700;
     color: #1e293b;
@@ -152,7 +149,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     color: var(--slate-500);
@@ -168,7 +164,6 @@ button {
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     border: 1px solid var(--slate-200);
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     color: var(--slate-600);
@@ -191,7 +186,6 @@ button {
 }
 
 .promo-tag {
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -201,7 +195,6 @@ button {
 
 .promo-title {
     margin-top: 0.25rem;
-    /* Mobile 16px to Desktop 18px */
     font-size: clamp(16px, 3vw, 18px);
     font-weight: 800;
     line-height: 1.5rem;
@@ -211,7 +204,6 @@ button {
     margin-top: 1rem;
     background: #ffffff;
     color: var(--blue-600);
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     padding: 0.5rem 1rem;
@@ -235,7 +227,6 @@ button {
 
 .results-title {
     margin: 0;
-    /* Mobile 20px to Desktop 24px */
     font-size: clamp(20px, 4vw, 24px);
     font-weight: 800;
     letter-spacing: -0.6px;
@@ -243,7 +234,6 @@ button {
 
 .results-subtitle {
     margin: 0;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
     color: var(--slate-500);
 }
@@ -256,7 +246,7 @@ button {
     padding: 0.5rem 0.75rem;
     width: 384px;
     color: var(--slate-400);
-    display: none;
+    display: flex;
 }
 
 .search-input {
@@ -264,7 +254,6 @@ button {
     border: none;
     outline: none;
     width: 100%;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
     color: var(--slate-500);
     padding: 0 0.75rem;
@@ -323,7 +312,6 @@ button {
     bottom: 0.75rem;
     left: 0.75rem;
     color: #ffffff;
-    /* Mobile 9px to Desktop 10px */
     font-size: clamp(9px, 1vw, 10px);
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -369,7 +357,6 @@ button {
 .car-card__name {
     margin: 0;
     color: var(--slate-900);
-    /* Mobile 13px to Desktop 15px */
     font-size: clamp(13px, 2.2vw, 15px);
     font-weight: 700;
     line-height: 1.75rem;
@@ -383,14 +370,12 @@ button {
 
 .car-card__price-value {
     color: var(--blue-600);
-    /* Mobile 16px to Desktop 18px */
     font-size: clamp(16px, 3vw, 18px);
     font-weight: 800;
 }
 
 .car-card__price-unit {
     color: var(--slate-500);
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
 }
@@ -400,7 +385,6 @@ button {
     align-items: center;
     gap: 1rem;
     color: var(--slate-500);
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
 }
 
@@ -414,7 +398,6 @@ button {
     background: var(--blue-600);
     color: #ffffff;
     font-weight: 700;
-    /* Mobile 14px to Desktop 16px */
     font-size: clamp(14px, 2.5vw, 16px);
     padding: 0.75rem 0;
     border-radius: 8px;
@@ -431,7 +414,6 @@ button {
 }
 
 .car-card__cta-icon {
-    /* Mobile 12px to Desktop 13px */
     font-size: clamp(12px, 1.8vw, 13px);
     transition: transform 300ms ease;
 }
@@ -456,10 +438,15 @@ button {
     .car-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    
 }
 
 @media (max-width: 639px) {
     .car-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .search-box {
+        display: none;
     }
 }
