@@ -24,22 +24,22 @@ export const ValuesData = [
 
 export const TeamData = [
     {
-        image: "../Source/Assets_About/Img2_Seaction1.png",
+        image: "../Source/télécharger.png",
         name: "Julian Vane",
         role: "Founder & CEO"
     },
     {
-        image: "../Source/Assets_About/Img2_Seaction2.png",
+        image: "../Source/télécharger.png",
         name: "Elena Rodriguez",
         role: "Head of Operations"
     },
     {
-        image: "../Source/Assets_About/Img2_Seaction3.png",
+        image: "../Source/télécharger.png",
         name: "Marcus Chen",
         role: "Lead Chauffeur"
     },
     {
-        image: "../Source/Assets_About/Img2_Seaction4.png.png",
+        image: "../Source/télécharger.png",
         name: "Sophia Sterling",
         role: "Client Relations"
     }

@@ -97,7 +97,6 @@ button {
 .page-hero-title {
     margin: 0;
     color: #ffffff;
-    /* Mobile 32px to Desktop 42px */
     font-size: clamp(32px, 8vw, 42px);
     line-height: 1.2;
     font-weight: 800;
@@ -106,7 +105,6 @@ button {
 .page-hero-text {
     margin: 0.75rem 0 0;
     max-width: 640px;
-    /* Mobile 16px to Desktop 20px */
     font-size: clamp(16px, 3.5vw, 20px);
     line-height: 1.75rem;
     color: #e2e8f0;
@@ -124,7 +122,6 @@ button {
     border-radius: 9999px;
     background: rgba(17, 82, 212, 0.102);
     padding: 0.25rem 0.75rem;
-    /* Mobile 11px to Desktop 12px */
     font-size: clamp(11px, 1.2vw, 12px);
     font-weight: 700;
     letter-spacing: 0.6px;
@@ -133,7 +130,6 @@ button {
 
 .mission-title {
     margin: 1rem 0;
-    /* Mobile 28px to Desktop 36px */
     font-size: clamp(28px, 6.5vw, 36px);
     line-height: 45px;
     font-weight: 800;
@@ -141,7 +137,6 @@ button {
 
 .mission-text {
     margin: 0 0 1.5rem;
-    /* Mobile 15px to Desktop 18px */
     font-size: clamp(15px, 3vw, 18px);
     line-height: 29px;
     color: var(--slate-600);
@@ -175,7 +170,6 @@ button {
 
 .section-title {
     margin: 0;
-    /* Mobile 28px to Desktop 36px */
     font-size: clamp(28px, 6.5vw, 36px);
     font-weight: 800;
     line-height: 2.25rem;
@@ -187,7 +181,6 @@ button {
 
 .section-subtitle {
     margin: 1rem 0 3rem;
-    /* Mobile 14px to Desktop 16px */
     font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.5rem;
     color: var(--slate-600);
@@ -249,7 +242,6 @@ button {
 
 .value-card__text {
     margin: 0;
-    /* Mobile 14px to Desktop 16px */
     font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.5rem;    
     color: var(--slate-600);
@@ -290,6 +282,7 @@ button {
 
 .team-card {
     cursor: pointer;
+    text-align: center;
     transition: all 400ms ease-in-out;
 }
 
@@ -299,14 +292,14 @@ button {
 
 .team-card__image {
     aspect-ratio: 3 / 4;
-    width: 100%;
-    border-radius: 0.75rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
     object-fit: cover;
 }
 
 .team-card__name {
     margin: 0.75rem 0 0;
-    /* Mobile 16px to Desktop 18px */
     font-size: clamp(16px, 3vw, 18px);
     line-height: 1.75rem;
     font-weight: 700;
@@ -315,7 +308,6 @@ button {
 
 .team-card__role {
     margin: 0;
-    /* Mobile 12px to Desktop 14px */
     font-size: clamp(12px, 2vw, 14px);
     line-height: 1.25rem;
     font-weight: 600;

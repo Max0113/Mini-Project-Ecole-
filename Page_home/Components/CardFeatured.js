@@ -1,6 +1,6 @@
 export function CardFeatured ({Url , Title, Price, Description, Icon, titleIcon, Number }) {
     return (`
-        <div class="featured-cars">
+        <div onclick="window.location.href='/Page_Cars/ViewCars/index.html'" class="featured-cars">
                 <img src="../Source/Assets_Home/${Url}" class="featured-cars-imge" alt="Car" />
                 <div class="featured-cars-body">
                     <div class="featured-cars-part1">
